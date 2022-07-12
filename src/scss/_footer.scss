@@ -1,0 +1,54 @@
+.footer {
+    width: 100%;
+    height: 231px;
+    background-color: $color1;
+    @extend %content;
+    flex-direction:row;
+    min-height: 0;
+    @include tablet {
+        @extend %content;
+    }
+    
+    @include phone {
+        height: 269px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction:column;
+    }
+}
+.copyrite{
+
+height: 31px;
+margin-right: 554px;
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* or 150% */
+
+letter-spacing: 0.1em;
+
+/* Белый */
+
+color: #FFFFFF;
+@include tablet {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    margin: 0px;
+}
+
+@include phone {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    margin: 0px;
+}
+
+}

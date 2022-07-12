@@ -1,0 +1,23 @@
+.app1 {
+    @include bg('../img/pic01.jpg');    
+    @extend %content;
+
+    .container {
+        justify-content:flex-end;
+
+        @include tablet {
+            justify-content:center;
+        }
+    }
+
+    h2 {
+        color: $color3;
+    }
+
+    &__item {
+        @include tablet {
+            width: 80%!important;
+            text-align:center!important;
+        }
+    }
+}

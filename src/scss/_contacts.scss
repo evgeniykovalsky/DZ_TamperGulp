@@ -1,0 +1,82 @@
+.contacts {
+    @extend %content;
+    
+    .container {
+        justify-content:space-around!important;
+         
+      
+        &>div:nth-child(1){
+            width: 617px;
+            height: 137px;
+            font-family: 'Abel';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+             line-height: 36px;
+            /* or 150% */
+
+             letter-spacing: 0.1em;
+
+            /* Фуксия */
+
+             color: #384C85;
+
+        }
+        &>div:nth-child(2){
+            width: 293px;
+            height: 137px;
+            font-family: 'Abel';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+             line-height: 36px;
+            /* or 150% */
+
+             letter-spacing: 0.1em;
+
+            /* Фуксия */
+
+             color: #384C85;
+
+        }
+
+
+
+        @include phone {
+            height: 836px;
+            flex-direction: column;
+          // justify-content:space-between;
+        }
+
+        &>div:nth-child(1) {
+            @include tablet {
+                width: 100%;
+            }
+
+            @include phone {
+                width: 100%;
+                text-align:left;
+                margin: 33px 0;
+            }
+            
+       }
+       &>div:nth-child(2) {
+        @include tablet {
+            width: 100%;
+        }
+
+        @include phone {
+            width: 100%;
+            text-align:left;
+            margin: 33px 0;
+        }
+        
+   }
+    }
+
+    h2 {
+        color: $color2;
+    }
+    
+   
+}

@@ -1,0 +1,88 @@
+.header {
+    background-image: linear-gradient(90deg, $color4 10.63%, $color1 88.13%);
+    color: $color3;
+   
+    
+     @extend %content;
+     @include phone {
+        height: 1024px;
+       
+    }
+        
+}
+.slogan{
+width: 940px;
+height: 154px;
+position: absolute;
+left: 25%;
+right: 17.36%;
+top:20%;
+bottom: 32.83%;
+font-family: 'Abel';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 75px;
+/* or 150% */
+letter-spacing: 0.1em;
+
+@include tablet {
+    width: 50%;
+    text-align:center;
+}
+
+@include phone {
+    height: 1024px;
+    text-align:center;
+    margin: 33px 0;
+}
+
+}
+
+.menu{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    left: 59%;
+    right: 40%;
+    top: 10%;
+    bottom: 42%; 
+
+    &>div{
+        width: 100px;
+        height: 17px;
+        font-family: 'Abel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    hr{
+        width: 73px;
+        
+
+    }
+    @include tablet {
+        left: 20%;
+        right: 20%;
+        top: 10%;
+        bottom: 42%; 
+       
+        text-align:center;
+    }
+    
+    @include phone {
+        left: 20%;
+        right: 20%;
+        top: 10%;
+        bottom: 42%; 
+        text-align:center;
+        margin: 33px 0;
+    }
+
+}
